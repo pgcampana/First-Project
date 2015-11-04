@@ -33,6 +33,11 @@ li {
    padding-left: 10px;
 }
 
+header li {
+	display: inline;
+	text-align: right;
+}
+
 header, article, aside, footer {
    border: 1px solid #111;
 }
