@@ -13,6 +13,7 @@ h2 {
 h1, h2 {
    font-weight: bold;
    margin: 5px 0;
+   text-align: center
 }
 p {
    font-size: 1em;
@@ -36,10 +37,16 @@ header, article, aside, footer {
    border: 1px solid #111;
    padding: 10px 1em;
    margin: 0 5% 10px;
+   background-color: white;
+   
 }
 
 header {
    margin-top: 10px;
+}
+
+header li{
+	display: inline;
 }
 
 footer {
