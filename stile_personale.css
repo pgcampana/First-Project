@@ -5,10 +5,10 @@
 }
 
 h1 {
-   font-size: 2em;
+   font-size: 2em; font-family: helvetica; 
 }
 h2 {
-   font-size: 1.5em;
+   font-size: 1.5em; font-family: helvetica;
 }
 h1, h2 {
    font-weight: bold;
@@ -51,6 +51,10 @@ header li{
 
 footer {
 	background-color: gray
+}
+
+footer p {
+	text-align: center;
 }
 
 body {
