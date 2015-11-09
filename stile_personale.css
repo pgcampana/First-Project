@@ -1,5 +1,5 @@
 #fullpage {
-   max-width: 63em;
+   max-width: 86em;
    margin: auto;
 }
 
@@ -10,19 +10,18 @@
 }
 
 body{
-	background-color: gray;
+	background-color: rgb(100, 100, 100);
+	font-family: lucida sans unicode;
 }
 h1 {
    font-size: 2em;
-   color: gray;
+   color: red;
 }
 h2 {
    font-size: 1.5em;
 }
 h1, h2 {
    font-weight: bold;
-   font-family: lucida sans unicode;
-   text-align: center;
    margin: 5px 0;
 }
 p {
@@ -30,36 +29,45 @@ p {
    margin: 5px 0;
 }
 ul {
-   padding-left: 10px;
-   margin: 10px 0;
+   padding-left: 5px;
+   margin: 5px 0;
    list-styletype:disc;
 }
 li {
-   margin-left: 10px;
-   padding-left: 10px;
+   margin-left: 5px;
+   padding-left: 5px;
 }
 
-header li{
-	display: inline;
+img {
+   max-width: 100%;
 }
 
 header, article, aside, footer {
-   border: 1px solid #111;
+   border: 2px solid #111;
    background-color: white;
 }
 
 header, article, aside, footer {
-   border: 1px solid #111;
+   border: 2px solid #111;
    padding: 10px 1em;
-   margin: 0 5% 10px;
+   margin: 0 3% 10px;
 }
 
 header {
    margin-top: 10px;
+   background-image: linear-gradient(to top right, rgb(255,255,255) 0%, rgb(0,0,255) 100%);
+}
+
+article img {
+	float: right;
+	padding-left: 3%;
+	padding-bottom: 10px;
+	width: 37%;
 }
 
 footer{
-	background-color: gray;
+	 margin-top: 10px;
+	background-image: linear-gradient(to top right, rgb(255,255,255) 0%, rgb(0,0,255) 100%);
 	text-align: center;
 }
 
@@ -73,6 +81,10 @@ footer p {
       width: 67%;
       float: left;
       margin-right: 0;
+   } 
+   
+   rightColumn {
+	   margin-left: 0;
    }
    aside {
       width: 21%;
@@ -81,5 +93,40 @@ footer p {
    }
    footer {
       clear: both;
+	  margin-bottom: 10px;
+   }
+}
+
+@media only screen and (min-width: 36em){
+   article {
+      width: 36%;
+      display: inline;
+	  }
+	  
+   rightColumn {
+      margin-left: 0;
+   }
+   nav {
+	   text-align: right;
+   }
+   nav li {
+	   display: inline;
+   }
+   aside {
+      width: 17%;
+	  display: block;
+   }
+   
+   aside li {
+	   text-align: left;
+	   display: block;
+   }
+}
+
+@media only screen and (max-width: 24em) {
+   article img{
+	   width: auto;
+	   float: none;
+	   padding-left: 0;
    }
 }
